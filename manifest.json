@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "nopagebreak",
+  "version": "1.0",
+
+  "description": "Unset page-break",
+
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.yaofangwang.com/*"],
+      "js": ["nopagebreak.js"]
+    }
+  ]
+
+}
